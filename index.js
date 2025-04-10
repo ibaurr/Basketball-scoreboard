@@ -80,3 +80,8 @@ function enableButtons() {
         btn.style.opacity = 1;
     });
 }
+
+window.updateScoreH = updateScoreH;
+window.updateScoreG = updateScoreG;
+window.resetScores = resetScores;
+window.startTimer = startTimer;
