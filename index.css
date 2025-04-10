@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'CursedTimer';
+    src: url('CursedTimerUlil-Aznm.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    background-color: #1B244A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-family: 'CursedTimer', monospace;
+    background-color: black;
+    margin-bottom: 20px;
+    color: #F94F6D;
+    font-size: 70px;
+    padding: 20px 30px;
+    border-radius: 7px;
+    min-width: 140px;
+    text-align: center;
+}
+
+.buttons button {
+    font-family: 'CursedTimer', monospace;
+    padding: 15px 15px;
+    background-color: transparent;
+    border: 3px solid #9AABD8;
+    color: #9AABD8;
+    border-radius: 7px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #9AABD8;
+    color: #1B244A;
+}
+
+.reset-container {
+    margin-top: 30px 0px;
+}
+
+.reset-button {
+    font-family: 'CursedTimer', monospace;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 3px solid #F94F6D;
+    color: #F94F6D;
+    border-radius: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background-color: #F94F6D;
+    color: white;
+}
+
+/* Highlight the winning score */
+.leading {
+    box-shadow: 0 0 20px 5px #F94F6D;
+    transition: box-shadow 0.3s ease;
+}
+
+.timer-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#timer {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #F94F6D;
+    font-family: 'CursedTimer', monospace;
+}
+
+.start-button {
+    font-family: 'CursedTimer', monospace;
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 3px solid #9AABD8;
+    color: #9AABD8;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #9AABD8;
+    color: #1B244A;
+}

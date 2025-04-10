@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <div class="timer-container">
+        <div id="timer">60</div>
+        <button onclick="startTimer()" class="start-button">START GAME</button>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h3 class="title">HOME</h3>
+            <div class="score" id="home-score">0</div>
+            <div class="buttons">
+                <button onclick="updateScoreH(1)">+1</button>
+                <button onclick="updateScoreH(2)">+2</button>
+                <button onclick="updateScoreH(3)">+3</button>
+            </div>
+        </div>
+        <div class="section">
+            <h3 class="title">GUEST</h3>
+            <div class="score" id="guest-score">0</div>
+            <div class="buttons">
+                <button onclick="updateScoreG(1)">+1</button>
+                <button onclick="updateScoreG(2)">+2</button>
+                <button onclick="updateScoreG(3)">+3</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reset Button -->
+    <div class="reset-container">
+        <button onclick="resetScores()" class="reset-button">RESET</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
